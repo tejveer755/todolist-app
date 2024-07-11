@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 735px;
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+main .image {
+  width: 100%;
+  height: 220px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 490px;
+  height: 600px;
+  /* max-height: 500px; */
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  outline: none;
+  width: 82%;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  caret-color: #cacde8;
+  color: #cacde8;
+  height: 40px;
+}
+
+form button {
+  width: 18%;
+  /* adjusted width to make it fit perfectly */
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  height: 60px;
+  outline: none;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto; /* Add this property */
+  max-height: 275px;
+  border-radius: 10px 10px 0 0;
+}
+
+
+.content{
+  max-height: 500px;
+  margin-top: 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  color: #cacde8;
+  margin: 14px auto 0px auto;
+  padding: auto 10px;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px ridge #cacde87e;
+}
+
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #cacde8;
+  /* background: transparent; */
+  cursor: pointer;
+  margin: 0 25px;
+  position: relative;
+}
+
+.check-icon {
+  background: transparent;
+}
+
+.checkbox img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+
+.checkbox:hover {
+ border: 1px ridge hsl(192, 100%, 67%);
+}
+
+
+.todo button {
+  display: none;
+  margin: 0 20px 0 auto;
+}
+
+.todo:hover button {
+  display: inline;
+}
+
+
+
+h4 {
+  text-align: center;
+  font-size: 17px;
+  margin: 20px auto;
+  font-weight: 500;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 55px;
+  border-top: 1px ridge #cacde87e;;
+  /* position: fixed; */
+}
+
+.status h4 {
+  margin: 20px 15px;
+}
+
+.clear-completed:hover{
+  transition: color 0.4s ease; /* Smooth transition for color change */
+  color: #999ec0;
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 25px;
+  -webkit-box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav h3{
+  margin: auto 20px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.4s ease; /* Smooth transition for color change */
+}
+
+
+@media (max-width: 530px){
+.container{
+  width: 90%;
+}
+}
